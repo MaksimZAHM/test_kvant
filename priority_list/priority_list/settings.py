@@ -27,6 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+CONDITIONS_TYPE = [
+    ('created', 'created'),
+    ('launched', 'launched'),
+    ('stopped', 'stopped')
+]
 
 # Application definition
 
@@ -37,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'priorities.apps.PrioritiesConfig',
 ]
 
 MIDDLEWARE = [
